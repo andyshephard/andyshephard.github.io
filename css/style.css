@@ -54,14 +54,20 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #0077b5;
-    color: white;
+    background-color: white;
+    color: #00c6ff;
     text-decoration: none;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     margin-top: 20px;
     transition: background-color 0.2s ease;
+}
+
+.social-button i {
+    color: #00c6ff;
+    font-size: 20px;
+    transition: color 0.2s ease;
 }
 
 .social-button:hover {
