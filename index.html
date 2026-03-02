@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy Shephard</title>
-    
-    <!-- Meta tags -->
-    <meta name="description" content="I'm an experienced mobile software developer from the UK, specialising in Swift &amp; Flutter. I also run a digital agency in London, called Yoyo Studios.">
-    
+    <title>Andy Shephard — Founding Engineer & 0 to 1 Platform Builder</title>
+
+    <meta name="description" content="Founding Engineer specialising in AI-native systems. I design and ship products from idea to production — architecture, infrastructure, and execution across mobile, web, and backend.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
@@ -21,28 +25,198 @@
 
     <!-- Social Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Andy Shephard">
-    <meta property="og:description" content="I'm an experienced software developer from the UK, specialising in Swift &amp; Flutter.">
+    <meta property="og:url" content="https://www.andyshephard.com">
+    <meta property="og:title" content="Andy Shephard — Founding Engineer">
+    <meta property="og:description" content="I design and ship AI-native systems from idea to production. 12+ years building products from pre-seed to $1B+ scale.">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Andy Shephard">
-    <meta property="twitter:description" content="I'm an experienced software developer from the UK, specialising in Swift &amp; Flutter.">
-    
-    <!-- Analytics -->
-    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <meta property="twitter:site" content="@andyshephard">
+    <meta property="twitter:title" content="Andy Shephard — Founding Engineer">
+    <meta property="twitter:description" content="I design and ship AI-native systems from idea to production. 12+ years building products from pre-seed to $1B+ scale.">
+
+    <!-- Analytics (PostHog) -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing identify alias people.set people.set_once set_config get_config get_property getFeatureFlag getFeatureFlagPayload isFeatureEnabled onFeatureFlags reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on off getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId setPersonProperties".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_gCnqwdUK5Kab7kw6nd0FCyPfm1YM518POmbIthqrM2y', {
+            api_host: 'https://eu.i.posthog.com',
+            defaults: '2026-01-30',
+            person_profiles: 'identified_only'
+        });
+    </script>
 </head>
 <body>
-    <div class="card">
-        <img src="img/andy.webp" alt="Andy Shephard">
-        <div class="card-content">
-            <h2>Andy Shephard</h2>
-            <p><em>Experienced mobile software developer</em> from the UK, specialising in <strong>Swift & Flutter</strong>. I've worked professionally since <strong>2012</strong> on various projects, from Augmented Reality, IoT, Social Networks, Dating, and Gaming.</p>
-            <nav class="social-links">
-                <a href="https://www.linkedin.com/in/andyshephard/" class="social-button" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:me@andyshephard.com" class="social-button" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/andyshephard" class="social-button" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/andyshephard" class="social-button" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">Andy Shephard</a>
+            <nav class="header__nav" role="navigation">
+                <a href="#work">Work</a>
+                <a href="#approach">Approach</a>
+                <a href="mailto:me@andyshephard.com" class="btn btn--sm" data-track="nav_contact">Get in Touch</a>
             </nav>
+            <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <h1>Founding Engineer<br>& 0 to 1 Platform Builder</h1>
+                    <p>I design and ship AI-native systems from idea to production — owning architecture, infrastructure, and product execution across mobile, web, and backend.</p>
+                    <p>From revenue-generating AI platforms to products serving millions of users, I build foundations designed to scale — technically and commercially.</p>
+                    <div class="hero__actions">
+                        <a href="#work" class="btn btn--primary" data-track="view_work">View Work</a>
+                        <a href="mailto:me@andyshephard.com" class="btn btn--outline" data-track="lets_talk">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="img/andy.webp" alt="Andy Shephard" width="480" height="480" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section id="stats" class="stats">
+            <div class="container stats__grid">
+                <div class="stats__item reveal">
+                    <p class="stats__headline"><strong class="stats__number" data-target="500" data-suffix="+">0+</strong> MAUs</p>
+                    <p class="stats__subtitle">SaaS Built Solo</p>
+                    <p class="stats__desc">AI-powered microlearning platform generating recurring revenue.</p>
+                </div>
+                <div class="stats__divider" aria-hidden="true"></div>
+                <div class="stats__item reveal">
+                    <p class="stats__headline"><strong class="stats__number" data-target="20" data-suffix="">0</strong> Schools Onboarded in 3 Months</p>
+                    <p class="stats__subtitle">EdTech infrastructure processing ~50,000 questions/day</p>
+                </div>
+                <div class="stats__divider" aria-hidden="true"></div>
+                <div class="stats__item reveal">
+                    <p class="stats__headline"><strong class="stats__number" data-target="12" data-suffix="+">0+</strong> Years</p>
+                    <p class="stats__subtitle">Across Pre-Seed → $1B Valuation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section id="work" class="work">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Selected Work</h2>
+                    <p>Platforms I've built, led, or significantly contributed to.</p>
+                </div>
+                <div class="work__grid">
+                    <article class="card reveal">
+                        <div class="card__img card__img--chunks">
+                            <img src="img/chunks.png" alt="Chunks Microlearning" width="400" height="240" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Chunks Microlearning</h3>
+                            <p class="card__metric">500+ MAUs · ~$500 MRR</p>
+                            <p class="card__desc">AI-powered microlearning platform built from zero. Automated content pipelines, Stripe billing, and analytics — generating recurring revenue as a solo founder.</p>
+                            <div class="card__tags">
+                                <span>Flutter</span>
+                                <span>TypeScript</span>
+                                <span>Firebase</span>
+                                <span>AI/LLM</span>
+                                <span>Stripe</span>
+                            </div>
+                            <a href="https://chunks.app" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-track="chunks">View Product <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card__img card__img--trivela">
+                            <img src="img/trivela.png" alt="Trivela FC" width="400" height="240" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Trivela FC</h3>
+                            <p class="card__metric">20 schools · 50K questions/day</p>
+                            <p class="card__desc">Led transition from prototype to production. 20 schools onboarded with secure backend architecture and institutional integrations.</p>
+                            <div class="card__tags">
+                                <span>EdTech</span>
+                                <span>Real-time</span>
+                                <span>Infrastructure</span>
+                            </div>
+                            <a href="https://trivelagame.com" target="_blank" rel="noopener" class="btn btn--outline btn--sm" data-track="trivela">View Platform <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card__img card__img--eyeo">
+                            <img src="img/abp.webp" alt="AdBlock Plus" width="400" height="240" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">AdBlock Plus (eyeo)</h3>
+                            <p class="card__metric">Millions of users globally</p>
+                            <p class="card__desc">Contributed to large-scale mobile platforms serving millions globally. Cross-platform SDK development and content-blocking infrastructure.</p>
+                            <div class="card__tags">
+                                <span>iOS</span>
+                                <span>Android</span>
+                                <span>SDK</span>
+                                <span>Scale</span>
+                            </div>
+                            <a href="https://adblockplus.org" target="_blank" rel="noopener" class="btn btn--outline btn--sm" data-track="eyeo">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Work -->
+        <section id="approach" class="approach">
+            <div class="container approach__grid">
+                <div class="approach__skills reveal">
+                    <h2>How I Work</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skills-list__icon"><i class="fa-solid fa-rocket"></i></span>
+                            <span>0 to 1 product architecture</span>
+                        </li>
+                        <li>
+                            <span class="skills-list__icon"><i class="fa-solid fa-server"></i></span>
+                            <span>Production-grade backend & infrastructure</span>
+                        </li>
+                        <li>
+                            <span class="skills-list__icon"><i class="fa-solid fa-brain"></i></span>
+                            <span>AI/LLM system integration</span>
+                        </li>
+                        <li>
+                            <span class="skills-list__icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span>Commerce & monetization systems</span>
+                        </li>
+                        <li>
+                            <span class="skills-list__icon"><i class="fa-solid fa-gears"></i></span>
+                            <span>Automation & operational leverage</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="approach__cta reveal">
+                    <h3>Building something ambitious?</h3>
+                    <p>I'm interested in joining early-stage teams as a founding or first technical hire, helping shape product architecture and long-term technical direction. If you're building something that matters — let's talk.</p>
+                    <a href="mailto:me@andyshephard.com" class="btn btn--white" data-track="cta_bottom">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__info">
+                <p class="footer__name">Andy Shephard</p>
+                <p class="footer__role">Founding Engineer</p>
+            </div>
+            <nav class="footer__social" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/andyshephard/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:me@andyshephard.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/andyshephard" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/andyshephard" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </nav>
+            <p class="footer__copy">&copy; 2025 Andy Shephard</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
